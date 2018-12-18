@@ -1,0 +1,39 @@
+<html>
+<head>
+ 
+   <title>Checking for CAPS LOCK</title>
+    <script language="JavaScript">
+ 
+   //Check the keyboard in order to know wich key has been pressed by the user
+   function checkCapsLock( e ) {
+      var capsLockON;
+      keyCode = e.keyCode?e.keyCode:e.which;
+      shiftKey = e.shiftKey?e.shiftKey:((keyCode == 16)?true:false);
+      if(((keyCode >= 65 && keyCode <= 90) && !shiftKey)||((keyCode >= 97 && keyCode <= 122) && shiftKey)) {
+          capsLockON = true;
+      } else {
+         capsLockON = false;
+      }
+      if (capsLockON)
+         document.getElementById('divWarningCapsLock').style.visibility = 'visible';
+       else
+         document.getElementById('divWarningCapsLock').style.visibility = 'hidden';
+ 
+   }
+</script>
+</head>
+<body>
+ 
+   <div align="center">
+   <table width="100%" border=0 cellspacing=0 cellpadding=0>
+      <tr>
+         <td width="100%" align="center" valign="top">
+            <strong>Password:</strong>
+            <input id="item" type="text" name="Password" size=16 maxlength=16 onKeyPress="checkCapsLock( event )" />
+ <div id="divWarningCapsLock" style="visibility:hidden">Caps Lock is on.</div>
+         </td>
+      </tr>
+   </table>
+ 
+</body>
+</html>

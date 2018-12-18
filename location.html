@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function bodyload()
+{
+  document.getElementById("details").style.display="none";
+}
+function DetailsClick()
+{
+document.getElementById("details").style.display="block";
+
+document.getElementById("host").innerText=
+location.hostname;
+
+document.getElementById("href").innerText=
+location.href;
+
+document.getElementById("protocol").innerText=
+location.protocol;
+
+document.getElementById("port").innerText=
+location.port;
+}
+</script>
+</head>
+<body onload="bodyload()">
+<div>
+<form>
+<center>
+<input type="button" name="btnDetails" value="Get Client Details" onclick="DetailsClick()">
+</center>
+<div id="details">
+<table border="1" align="center" width="400">
+<tr>
+<td> Host Name </td>
+<td> <span id="host"> </span> </td>
+</tr>
+<tr>
+<td> URL </td>
+<td> <span id="href"> </span> </td>
+</tr>
+<tr>
+<td> Protocol </td>
+<td> <span id="protocol"> </span> </td>
+</tr>
+<tr>
+<td> Port Number </td>
+<td> <span id="port"> </span> </td>
+</tr>
+</table>
+</div>
+</form>
+</div>
+</body>
+</html>

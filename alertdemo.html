@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function bodyload()
+{
+ alert("Welcome to Javascript");
+}
+function nameClick()
+{
+ var name=prompt("Enter Name");
+  if(name!=null)
+  { 
+ document.getElementById("msg").innerHTML="Hello !" + name;
+  }
+  else
+  {
+   document.getElementById("msg").innerHTML="Please Enter Name";
+  }
+}
+function registerClick()
+{
+  var d=confirm("Do You want to navigate to Registration form?");
+  if(d==true)
+  {
+   location.href="form1.html";
+  }
+}
+</script>
+</head>
+<body onload="bodyload()">
+<form>
+<input type="button"  value="Enter Name" onclick="nameClick()">
+<input type="button" value="Register" onclick="registerClick()">
+<div id="msg"> </div>
+
+</form>
+</body>
+</html>

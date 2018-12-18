@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function BlockLetters()
+{
+  var str=document.getElementById("txtName").value;
+ document.getElementById("txtName").value=str.toUpperCase();
+}
+function password()
+{
+   alert("Password Max 10 Chars");
+   document.getElementById("txtPwd").focus();
+}
+</script>
+</head>
+<body>
+<form>
+Enter Name : (Block Letters)
+<input type="text"  id="txtName" onblur="BlockLetters()" autofocus>
+<br>
+Password : 
+<input type="password"  id="txtPwd" onfocus="password()">
+</form>
+</body>
+</html>

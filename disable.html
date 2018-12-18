@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+document.oncontextmenu=new Function("return false");
+ 
+document.onselectstart=new Function ("return false"); 
+if (window.sidebar){
+document.onmousedown=new Function("return false"); 
+document.onclick=new Function("return true") ; 
+ 
+document.oncut=new Function("return false"); 
+ 
+document.oncopy=new Function("return false"); 
+ 
+document.onpaste=new Function("return false"); 
+}
+</script>
+</head>
+<body>
+how to Disable cut, copy, paste, right click and context menu using Javascript 
+</body>
+</html>
+ 
+<html>
+<head>
+</head>
+<body oncopy="return false;" onpaste="return false;" oncut="return false;">
+        <div>
+          Disabling cut, copy, paste, right click using Javascript     
+       </div>
+   </body>
+</html>

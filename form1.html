@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+ </head>
+<body>
+<div>
+<h1> Registration Form </h1>
+<form  name="frmRegister">
+<table  align="center" width="400">
+<tr>
+<td> User Name </td>
+<td>  <input type="text" name="txtUserName"
+
+placeholder="Name max 5 chars"  maxlength="5"
+
+required ></td>
+</tr>
+<tr>
+<td> Password  </td>
+<td>  <input type="password"  name="txtPassword"
+
+placeholder="Password max 10 chars" autofocus>
+
+</td>
+</tr>
+<tr>
+<td> Select City </td>
+<td>
+<select>
+<option value="-1"> Select a City </option>
+<optgroup  label="south">
+<option value="chennai"> Chennai </option>
+<option value="Hyd">Hyd</option>
+</optgroup>
+<optgroup label="north">
+<option value="delhi"> Delhi</option>
+<option value="mumbai"> Mumbai </option>
+</optgroup>
+</select>
+</td>
+</tr>
+<tr>
+<td> Select a Book </td>
+<td> 
+<label> Select Your Book:
+<datalist id="books">
+<select name="books">
+<option> Java Script </option>
+<option> Java Advanced </option>
+<option> ASP </option>
+<option> ASP.NET </option>
+</select>
+</datalist>
+<input type="text"  name="txtbooks" list="books">
+</label>
+</td>
+</tr>
+<tr>
+<td> Your Progress </td>
+<td> <meter min="1" max="100" value="17">
+
+</meter> </td>
+</tr>
+<tr>
+<td> Your Progress </td>
+<td> <progress min="1" max="100" value="85">
+
+</progress> 85% completed  </td>
+</tr>
+<tr>
+<td> Your Address </td>
+<td>
+<textarea> </textarea>
+ </td>
+</tr>
+
+<tr>
+<td> Select Gender </td>
+<td> <input type="radio"  name="Gender" 
+
+value="male" > Male
+
+<input type="radio"  name="Gender" 
+
+value="female" checked> Female
+</td>
+</tr>
+<tr>
+<td> Select Hobbies </td>
+<td> <input type="checkBox"  name="optMusic">
+
+Music
+<input type="checkBox"  name="optMovies">
+
+Movies
+<input type="checkBox"  name="optBooks"> Books
+</td>
+</tr>
+<tr>
+<td> Age </td>
+<td> <input type="number" min="15" max="35"
+
+value="22">  </td>
+</tr>
+<tr>
+<td> Mobile </td>
+<td> <input type="text" name="txtMobile"
+
+pattern="\+91[0-9]{10}" placeholder="Enter 10 digit
+
+Mobile"> </td>
+</tr>
+<tr>
+<td> Enter Check No </td>
+<td> <input type="text" name="txtCheck" 
+
+pattern="[A-Z]{3}\-[0-9]{3}\-[A-Z]{2}[0-9]{2}"> </td>
+</tr>
+<tr>
+<td> Your Email </td>
+<td>  <input type="email" name="txtemail"> </td>
+</tr>
+<tr>
+<td> Upload Photo </td>
+<td> <input type="file"> </td>
+</tr>
+<tr>
+<td> Your Website </td>
+<td> <input type="url"> </td>
+</tr>
+<tr>
+<td> Date of Birth </td>
+<td>  <input type="date"> </td>
+</tr>
+<tr>
+<td> Terms of Service </td>
+<td> <textarea rows="8" cols="30" readonly>
+
+MICROSOFT SOFTWARE LICENSE AGREEMENT
+WINDOWS 8.1 PRO
+Thank you for choosing Microsoft Windows 8.1 Pro.
+
+This is a license agreement between you and
+
+Microsoft Corporation (or, based on where you live,
+
+one of its affiliates) that describes your rights to use
+
+the Windows 8.1 Pro software. For your
+
+convenience, we’ve organized this agreement into
+
+two parts. The first part includes introductory terms
+
+phrased in a question and answer format; the
+
+Additional Terms and Limited Warranty follow and
+
+contain greater detail. You should review the entire
+
+agreement, including any linked terms, because all
+
+of the terms are important and together create this
+
+contract that applies to you. You can review linked
+
+terms by pasting the forward link into your browser
+
+window once the software is running. The Additional
+
+Terms contain a binding arbitration clause and class
+
+action waiver. If you live in the United States, these
+
+affect your rights to resolve a dispute with Microsoft,
+
+so
+        </textarea> </td>
+</tr>
+<tr>
+<td>  &nbsp </td>
+<td>   
+<input type="submit"  value="Submit"
+
+name="btnSubmit">
+<input type="reset"  value="Reset"
+
+name="btnReset">
+<input type="button"  value="Continue" 
+
+name="btnContinue">
+</td>
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>

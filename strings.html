@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function checkpassword()
+{
+  var pwd=document.getElementById("txtPwd").value;
+  if(pwd.length>8)
+  {
+document.getElementById("msg").style.color="green";
+   document.getElementById("msg").innerHTML="Strong Password";
+  }
+else
+{
+document.getElementById("msg").style.color="red";
+ document.getElementById("msg").innerHTML="Weak Password";
+}
+}
+function validatemobile()
+{
+ var mobile=document.getElementById("txtMobile").value;
+var pattern=/\+91[0-9]{10}/;
+if(mobile.match(pattern))
+{
+  document.getElementById("m").innerHTML="SMS Sent to mobile";
+}
+else
+ {
+document.getElementById("m").innerHTML="Invalid Mobile";
+}
+
+}
+</script>
+</head>
+<body onload="bodyload()">
+<form>
+<table align="left">
+<tr>
+<td> Enter Password </td>
+<td> <input type="password" id="txtPwd" onkeyup="checkpassword()"> </td>
+<td>
+<span id="msg"> </span>
+</td>
+</tr>
+<tr>
+<td> Mobile Number </td>
+<td> <input type="text" id="txtMobile" onkeyup="validatemobile()">
+</td>
+<td>
+<span id="m"> </span>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

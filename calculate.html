@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function AddClick()
+{
+  var a=parseInt(document.getElementById("txtn1").value);
+  var b=parseInt(document.getElementById("txtn2").value);
+ var c=a+b;
+ document.getElementById("result").innerHTML="Addition: " + c;
+}
+</script>
+</head>
+<body>
+<form>
+Enter Number 1 :
+<input type="range" id="txtn1" min="1" max="50">
+<br>
+Enter Number 2 :
+<input type="range" id="txtn2" min="1" max="100">
+<br>
+<div id="result"> </div>
+<br>
+<input type="button"  value="Add"  name="btnAdd" onclick="AddClick()">
+</form>
+</body>
+</html>

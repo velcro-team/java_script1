@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function SubmitClick()
+{
+ alert("Data Submited to Server");
+}
+function ResetClick()
+{
+ alert("Form Data Will be Cleared");
+}
+</script>
+</head>
+<body>
+<form onsubmit="SubmitClick()" onreset="ResetClick()" action="home.html" method="post">
+Name <input type="text"  id="txtName"> 
+<br>
+<input type="Submit"  value="Submit" name="btnSubmit">
+<input type="reset" value="Reset" name="btnReset">
+</form>
+</body>
+</html>

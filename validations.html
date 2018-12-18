@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function RegisterClick()
+{
+ var mobile=document.getElementById("txtMobile").value;
+ var pattern=/\+91[0-9]{10}/;
+ if(mobile.match(pattern))
+ {
+  document.getElementById("mobile").src="images/correct.png";
+ }
+else
+{
+  document.getElementById("mobile").src="images/wrong.png";
+} 
+}
+function validatePassword()
+{
+ var pwd=document.getElementById("txtPwd").value;
+ var pattern=/[A-Za-z]{4,10}/;
+ if(pwd.match(pattern))
+ {
+  document.getElementById("pwd").src="images/correct.png";
+ }
+else
+{
+  document.getElementById("pwd").src="images/wrong.png";
+} 
+}
+</script>
+</head>
+<body>
+<div>
+<form>
+Password : 
+<input type="password" id="txtPwd" onkeyup="validatePassword()">
+<span>
+ <img  id="pwd" src=""> 
+</span>
+<br>
+Mobile :
+<input type="text" id="txtMobile" onkeyup="RegisterClick()">
+<span>
+ <img  id="mobile" src=""> 
+</span>
+<br>
+<input type="button" value="Register">
+</form>
+</div>
+</body>
+</html>

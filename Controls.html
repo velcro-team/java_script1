@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+<div>
+<form>
+<table width="400" height="50" align="center" border="1">
+<tr>
+<td>
+Enter Name : 
+</td>
+<td>
+<input type="text"  placeholder="Name Max 10 Chars"  maxlength="10" required  pattern="[A-Za-z]{4,10}" name="txtName" list="names" autofocus>
+<datalist id="names">
+<option value="Raj"> Raj </option>
+<option value="Rakesh"> Rakesh </option>
+<option value="Sanjay"> Sanjay </option>
+<option value="Sachin"> Sachin </option>
+</datalist>
+</td>
+</tr>
+<tr>
+<td> Password </td>
+<td> <input type="password" name="txtpwd" placeholder="Only Uppercase max 6 chars" pattern="[A-Z]{1,6}"> </td>
+</tr>
+<tr>
+<td> Gender </td>
+<td>  <input type="radio" name="gender" checked> Male
+         <input type="radio" name="gender"> Female
+</td>
+</tr>
+<tr>
+ <td> Date of Birth </td>
+ <td>
+ <input type="date">   
+</td>
+</tr>
+<tr>
+<td>  Age </td>
+<td>  <input type="number" min="15" max="45" step="2">  </td>
+</tr>
+<tr>
+<td> Price Range </td>
+<td> <input type="range" min="1" max="10000" value="5000"> </td>
+</tr>
+<tr>
+<td> Favorite Color </td>
+<td> <input type="color"> </td>
+</tr>
+<tr>
+<td> Profile Photo </td>
+<td> <input type="file"> </td>
+</tr>
+<tr>
+<td> Blog Address </td>
+<td> <input type="url"> </td>
+</tr>
+<tr>
+<td> Search Our Site </td>
+<td> <input type="search" value="Movies"> </td>
+</tr>
+<tr>
+<td> Payment Options </td>
+<td> <input type="radio" name="payment" checked> Credit Card
+        <input type="radio" name="payment" checked>  Debit Card
+ </td>
+</tr>
+<tr>
+<td> Hobbies </td>
+<td> <input type="checkbox"> Music
+        <input type="checkbox" checked> Movies
+</td>
+</tr>
+<tr>
+<td> Select City </td>
+<td> 
+<select>
+<option value="-1"> Select a City </option>
+<optgroup label="North">
+<option value="Delhi"> Delhi </option>
+<option value="Mumbai"> Mumbai </option>
+<optgroup label="South">
+<option value="Chennai"> Chennai</option>
+<option value="Hyd"> Hyd</option>
+</select>
+<datalist  id="cities">
+<option value="Delhi"> Delhi </option>
+<option value="Mumbai"> Mumbai  </option>
+<option value="Chennai"> Chennai</option>
+<option value="Hyd"> Hyd</option>
+</datalist>
+</td>
+</tr>
+<tr>
+<td> Grade Meter </td>
+<td>  
+<meter value="10" min="1" max="50">  </meter>
+</td>
+</tr>
+<tr>
+<td> Installing </td>
+<td> <progress>  </progress>   </td>
+</tr>
+<tr>
+<td> Keygen </td>
+<td> 
+ <keygen> </keygen>
+</td>
+</tr>
+<tr>
+<td> License Terms </td>
+<td> 
+<textarea rows="6" cols="20" spellcheck="false">
+
+</textarea>
+</td>
+</tr>
+</table>
+<input type="submit" value="Register">
+</form>
+</div>
+</body>
+</html>

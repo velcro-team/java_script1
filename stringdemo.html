@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function DetailsClick()
+{
+ var str=document.getElementById("txtString").value;
+ document.getElementById("msg").innerHTML+="Char at Index 0:" + str.charAt(0) + "<br>";
+document.getElementById("msg").innerHTML+="Sub String 0 to 7:" + str.substring(0,7) + "<br>";
+document.getElementById("msg").innerHTML+="J is at Index :" + str.indexOf("J")+ "<br>";
+document.getElementById("msg").innerHTML+="Length  :" + str.length+ "<br>";
+}
+</script>
+</head>
+<body>
+<div>
+<form>
+Enter a String :
+<input type="text" id="txtString">
+<input type="button" value="Get Details" onclick="DetailsClick()">
+<div id="msg"> </div>
+</form>
+</div>
+</body>
+</html>

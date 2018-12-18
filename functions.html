@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function SubmitClick(e)
+{
+ document.getElementById("msg").innerHTML="You Clicked" + e.value + " Button";
+}
+function ResetClick(e)
+{
+ document.getElementById("msg").innerHTML="You Clicked" + e.value + " Button";
+}
+function textChange(e,args)
+{ 
+  document.getElementById("code").innerHTML=args.which;
+}
+</script>
+</head>
+<body>
+<form>
+<div id="code"> </div>
+<input type="text"  id="txtName" onkeyup="textChange(this,obj)">
+
+<br>
+<div id="msg"> </div>
+<input type="button"  value="Submit" name="btnSubmit" onclick="SubmitClick(this)">
+<input type="button" value="Reset" name="btnReset" onclick="ResetClick(this)">
+</form>
+</body>
+</html>

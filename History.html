@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<script type="text/javascript">
+function bodyload()
+{
+  document.getElementById("a").style.display="none";
+  if(history.length>3)
+  {
+   document.getElementById("msg").innerHTML="Please Register for More....";
+  }
+  else
+ {
+  document.getElementById("msg").innerHTML="You can visit max 3 Pages";
+ }
+}
+function backClick()
+{
+ history.back();
+}
+function forwardClick()
+{
+ history.go(-1);
+}
+function show()
+{
+  document.getElementById("a").style.display="block";
+}
+</script>
+</head>
+<body onload="bodyload()">
+<div id="msg"> </div>
+<form>
+<input type="button" name="btnback" value="Back" onclick="backClick()">
+
+<input type="button" name="btnforward" value="Index" onclick="forwardClick()">
+<div id="a"> welcome </div>
+<input type="button" value="Show" onclick="show()">
+</form>
+</body>
+</html>
+
+

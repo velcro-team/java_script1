@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<script type="text/javascript">
+ function bodyload()
+ {
+   GetTime();
+ }
+ function GetTime()
+ {
+  var now=new Date();
+  var hours=now.getHours();
+  var min=now.getMinutes();
+  var sec=now.getSeconds();
+var time=hours + ":" + min + ":" + sec;
+  document.getElementById("clock").innerHTML=time;   
+  setTimeout("GetTime()",100);
+ }
+</script>
+</head>
+<body onload="bodyload()">
+<div id="clock" style="background-color:red;color:white;text-align:center">
+</div>
+</body>
+</html>

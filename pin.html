@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function validatePin()
+{
+  var pin=parseInt(document.getElementById("txtPin").value);
+ if(pin==6699)
+ {
+   document.getElementById("msg").innerHTML="Success with actual Pin";
+ }
+else if(pin==9966)
+{
+   document.getElementById("msg").innerHTML="Success with alternate Pin";
+}
+else
+{
+   document.getElementById("msg").innerHTML="Invalid Pin";
+}
+}
+</script>
+</head>
+<body>
+<form>
+Enter Pin : 
+<input type="text" id="txtPin">
+<input type="button" value="Submit" onclick="validatePin()">
+<div id="msg">  </div>
+</form>

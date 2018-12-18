@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function OkClick()
+{
+  var d=confirm("Do you want to goto gmail?");
+  if(d==true)
+  {
+ location.href="http://www.gmail.com";
+  }
+}
+function nameClick()
+{
+ var n=prompt("Enter Name:");
+ if(n!=null)
+ {
+   document.write("Hello !" + n);
+ }
+else
+ {
+   document.write("Please Enter your Name");
+ }
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+ <input type="button" name="btnok" value="Gmail" onclick="OkClick()">
+ <input type="button" name="btnName" value="Click to Enter Name" onclick="nameClick()">
+</form>
+</body>
+</html>

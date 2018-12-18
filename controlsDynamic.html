@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function bodyLoad()
+{
+   var images = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg");
+  var container=document.getElementById("pics");
+ for(var i=0;i<images.lenght;i++)
+ {
+   var img=new Image();
+   img.src=images[i];
+   img.width="100";
+   img.height="100";
+  container.appendChild(img);
+ }
+}
+</script>
+</head>
+<body onload="bodyLoad()">
+<marquee scrollamount="10">
+<div  id="pics"> </div>
+</marquee>
+</body>
+</html>

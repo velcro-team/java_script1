@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var images=new Array("images/1.jpg", "images/2.jpg", "images/3.jpg");
+var count=0;
+function processNext()
+{
+  if (document.images && count < 2)
+ {
+  count++;
+  document.getElementById("image").src=images[count];
+ }
+}
+function processPrevious()
+{
+  if (document.images && count > 0)
+ {
+  count--;
+  document.getElementById("image").src=images[count];
+ }
+}
+</script>
+</head>
+<body>
+<form>
+<table width="400" height="200" border="1" align="center">
+<tr>
+ <td> 
+<input type="button" value="<" onclick="processPrevious()">
+</td> 
+<td>
+<img src="images/1.jpg" width="400" height="200" id="image"> </td> 
+</td>
+<td> 
+<input type="button" value=">" onclick="processNext()">
+</td> 
+</tr>
+</table>
+</form>
+</body>
+</html>

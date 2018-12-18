@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function getClick()
+{
+  switch(location.protocol)
+  {
+   case "http:":
+      document.getElementById("msg").innerHTML="Client Location : Web";
+      break;
+  case "https:":
+      document.getElementById("msg").innerHTML="Client Location : Web - Secured";
+      break;
+   case "ftp:":
+      document.getElementById("msg").innerHTML="Client Location : Local Computer";
+      break;
+      default:
+       document.getElementById("msg").innerHTML="Client Location : UnKnown";
+      break;
+  }
+}
+function reloadClick()
+{
+  location.reload();
+}
+function gmailClick()
+{
+ location.href="http://www.gmail.com";
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="button" value="Get Client Location" name="btnLocation" onclick="getClick()">
+<input type="button" value="Reload" name="btnReload" onclick="reloadClick()">
+<input type="button" value="Gmail" name="btnMail" onclick="gmailClick()">
+</center>
+<div id="msg"> </div>
+</form>
+</body>
+</html>
+

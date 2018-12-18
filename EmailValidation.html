@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function RegisterClick()
+{
+  var email=document.getElementById("txtEmail").value;
+  var atpos=email.indexOf("@");
+  var dotpost=email.lastIndexOf(".");
+  if(atpos<1 || dotpost-atpos<2)
+ {
+  document.getElementById("msg").innerHTML="Invalid Email";
+ }
+ else
+ {
+  document.write("success...");
+ }
+}
+</script>
+</head>
+<body>
+<div>
+<form>
+Enter a Email :
+<input type="text" id="txtEmail">
+<span id="msg"> </span>
+<br>
+<input type="button" value="Register" onclick="RegisterClick()">
+
+</form>
+</div>
+</body>
+</html>

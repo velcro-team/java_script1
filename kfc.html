@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function OrderClick()
+{
+ var burger=document.getElementById("optBurger");
+ var roller=document.getElementById("optRoller");
+ if(burger.checked==true)
+ { 
+   mcost=120;
+ }
+ if(roller.checked==true)
+ {
+   mcost=100;
+ }
+ var fries=document.getElementById("optFries");
+ var krusher=document.getElementById("optKrusher");
+ if(fries.checked==true)
+ {
+   acost=60;
+   mcost=mcost+acost;
+ }
+ if(krusher.checked==true)
+ {
+   acost=80;
+   mcost=mcost+acost;
+ }
+  document.getElementById("summary").innerHTML="Total Amount:" + "&#x20B9;" + mcost;
+}
+</script>
+</head>
+<body>
+<form name="frmHome">
+<font size="5" face="arial">
+<table width="950">
+<tr>
+<td colspan="2"> <img src="images/kfctop.png"> </td>
+</tr>
+<tr align="center" bgcolor="red">
+<td colspan="2"> Select a Meal </td>
+</tr>
+<tr align="center">
+<td> <img src="images/omg1.png"> 
+  <div> <input type="radio" value="optBurger"  id="optBurger" name="Meal"> OMG Rs120 BURGER </div>
+</td>
+<td> <img src="images/omg2.png"> 
+  <div> <input type="radio" value="optRoller"  id="optRoller" name="Meal"> OMG RS100 ROLLER </div>
+</td>
+</tr>
+<tr align="Center" bgcolor="red">
+<td colspan="2"> Select Ad-On </td>
+</tr>
+<tr align="center">
+<td> <img src="images/fries1.png"> 
+  <div> <input type="checkbox" value="optFries"  id="optFries" name="Fries"> RS 60 Large Fries </div>
+</td>
+<td> <img src="images/Krusher1.png"> 
+  <div> <input type="CheckBox" value="optKrusher"  id="optKrusher" name="Krusher">RS80 Krusher</div>
+</td>
+</tr>
+<tr align="center">
+<td colspan="2"> <input type="Button" value="Place Order" name="btnOrder" onclick="OrderClick()">  </td>
+</table>
+<center>
+<div id="summary" style="background-color:green; color:white"></div>
+</center>
+</form>
+</body>
+</html>

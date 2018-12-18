@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function bodyload()
+{
+  document.getElementById("details").style.display="none";
+}
+function DetailsClick()
+{
+document.getElementById("details").style.display="block";
+
+document.getElementById("appname").innerText=
+navigator.appName;
+
+document.getElementById("language").innerText=
+navigator.language;
+
+document.getElementById("platform").innerText=
+navigator.platform;
+
+document.getElementById("cookie").innerText=
+navigator.cookieEnabled;
+}
+</script>
+</head>
+<body onload="bodyload()">
+<div>
+<form>
+<center>
+<input type="button" name="btnDetails" value="Get Client Details" onclick="DetailsClick()">
+</center>
+<div id="details">
+<table border="1" align="center" width="400">
+<tr>
+<td> Browser Family </td>
+<td> <span id="appname"> </span> </td>
+</tr>
+<tr>
+<td> Browser Language </td>
+<td> <span id="language"> </span> </td>
+</tr>
+<tr>
+<td> Client Platform </td>
+<td> <span id="platform"> </span> </td>
+</tr>
+<tr>
+<td> Cookie Enabled </td>
+<td> <span id="cookie"> </span> </td>
+</tr>
+</table>
+</div>
+<input type="text" name="search">
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>

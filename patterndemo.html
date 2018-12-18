@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function changeCase()
+{
+   var name=document.getElementById("txtName").value;
+  document.getElementById("txtName").value=
+name.toUpperCase();
+}
+</script>
+</head>
+<body>
+<form>
+Enter Name (Block Letters):
+<input type="text"  id="txtName" onblur="changeCase()">
+</form>
+</body>
+</html>
+Enter Password :
+<input type="password" id="txtPwd" onkeyup="validatePassword()">
+<span id="msg"> </span>
+</form>
+</body>
+</html>

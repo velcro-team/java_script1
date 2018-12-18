@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function bulbOn()
+{
+  document.getElementById("bulb").src="images/bulbon.png";
+}
+function bulbOff()
+{
+  document.getElementById("bulb").src="images/bulboff.png";
+}
+function onover()
+{
+ document.getElementById("ad").src="images/pepsi.jpg";
+}
+function onout()
+{
+ document.getElementById("ad").src="images/rFresh.jpg";
+}
+</script>
+</head>
+<body>
+<marquee onmouseover="this.stop()" onmouseout="this.start()">
+<img src="images/1.jpg" width="100" height="100">
+<img src="images/2.jpg" width="100" height="100">
+<img src="images/3.jpg" width="100" height="100">
+<img src="images/4.jpg" width="100" height="100">
+</marquee>
+<img src="images/bulboff.png" width="200" height="200" onmousedown="bulbOn()" onmouseup="bulbOff()"  id="bulb">
+<h3> Press hold the mouse button on bulb to ON it.
+<img src="images/rFresh.jpg"  width="400" height="100" id="ad" onmouseover="onover()" onmouseout="onout()">
+</body>
+</html>

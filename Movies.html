@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function SelectMovie()
+{
+   var movieName=document.getElementById("lstMovies").value;
+ switch(movieName)
+ {
+   case "San":
+     document.getElementById("poster").src="images/san.jpg";
+     break;
+   case "Jurrasic":
+     document.getElementById("poster").src="images/jurassic.jpg";
+     break;
+   default:
+      document.getElementById("poster").src="images/inox.jpg";
+     break;
+ }
+}
+</script>
+</head>
+<body>
+<form>
+<h1 align="center"> INOX - MOVIES </h1>
+<table align="center">
+<tr>
+<td> Select a Movie </td>
+<td> 
+ <select id="lstMovies" onchange="SelectMovie()">
+  <option name="-1" value="-1"> Select a Movie </option>
+  <option value="San"> San Andreas </option>
+<option value="Jurrasic"> Jusrrasic World </option>
+ </select>
+</td>
+</tr>
+<tr>
+<td colspan="2"> <img src="images/inox.jpg" id="poster"> </td>
+</tr> 
+</table>
+</form>
+</body>
+</html>

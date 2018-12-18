@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function bodyload()
+{
+ var days=new Array("Sunday", "Monday", "Tuesday", "Wednesday");
+
+  var months=new Array("Jan","Feb","Mar","Apr","May","June","July","Aug","September","Oct");
+  
+var now=new Date();
+
+document.getElementById("msg").innerHTML=
+days[now.getDay()] + "," + 
+months[now.getMonth()] + "-" + now.getDate() + "-" + now.getFullYear();
+}
+</script>
+</head>
+<body onload="bodyload()">
+<div id="msg">
+</div>
+</body>
+</html>

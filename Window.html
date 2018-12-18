@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<script type="text/javascript">
+function RegisterClick()
+{
+window.open("register.html", "register", "width=300 height=300");
+}
+function bodyload()
+{
+ window.open("http://www.google.com","google","width=200 height=200");
+}
+function CloseClick()
+{
+  register.close();
+}
+function PrintClick()
+{
+ window.print();
+}
+</script>
+</head>
+<body onload="bodyload()">
+<div>
+<form name="frmHome">
+<h1> Click Print Button to Print this page </h1>
+<input type="button"  value="Register" name="btnRegister" onclick="RegisterClick()">
+
+<input type="button" name="btnClose"  value="Close" onclick="CloseClick()">
+
+<input type="button" name="btnPrint" value="Print"  onclick="PrintClick()">
+</form>
+</div>
+</body>
+</html>
+
+
